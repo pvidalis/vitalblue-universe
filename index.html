@@ -2,55 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta http-equiv="cleartype" content="on">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <title>www.vitalblue.gr | still spinning around</title>
-    <link type="text/css" rel="stylesheet" href="style.css" media="all"/>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8821427-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-8821427-1');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7635332722516229"
-            crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="assets/css/solar-system.css" media="all"/>
+    <link rel="stylesheet" href="assets/css/enhancements.css">
+    <script src="assets/js/app.js" defer></script>
 </head>
 <body class="opening hide-UI view-2D zoom-large data-close controls-close">
-<div id="navbar">
-    <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
+<header id="navbar">
+    <a id="toggle-data" href="#data" aria-controls="data" aria-expanded="false"><i class="icon-data"></i>Data</a>
     <h1>vitalblue.gr<br><span>still spinning around</span></h1>
-    <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
-</div>
-<div id="data">
+    <a id="toggle-controls" href="#controls" aria-controls="controls" aria-expanded="false"><i class="icon-controls"></i>Controls</a>
+</header>
+<nav id="data" aria-label="Select a celestial body">
     <a class="sun" title="sun" href="#sunspeed">Sun</a>
     <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
     <a class="venus" title="venus" href="#venusspeed">Venus</a>
-    <a class="earth active" title="earth" href="#earthspeed">Earth</a>
+    <a class="earth active" aria-current="true" title="earth" href="#earthspeed">Earth</a>
     <a class="mars" title="mars" href="#marsspeed">Mars</a>
     <a class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
     <a class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
     <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
     <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
-</div>
-<div id="controls">
+</nav>
+<section id="controls" aria-label="Display controls">
     <label class="set-view">
-        <input type="checkbox">
+        <input type="checkbox" aria-label="Toggle 2D view">
     </label>
     <label class="set-zoom">
-        <input type="checkbox">
+        <input type="checkbox" aria-label="Toggle close zoom">
     </label>
     <label>
         <input type="radio" class="set-speed" name="scale" checked>
@@ -64,8 +45,8 @@
         <input type="radio" class="set-distance" name="scale">
         <span>Distance</span>
     </label>
-</div>
-<div id="universe" class="scale-stretched">
+</section>
+<div id="universe" class="scale-stretched set-speed">
     <div id="galaxy">
         <div id="solar-system" class="earth">
             <div id="mercury" class="orbit">
@@ -163,13 +144,6 @@
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!--<script
-        src="https://code.jquery.com/jquery-4.0.0.min.js"
-        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
-        crossorigin="anonymous"></script>-->
-<!--<script src="js/prefixfree.min.js"></script>-->
-<!--<script src="js/scripts.min.js"></script>-->
-<script src="spinning.js"></script>
 </body>
 </html>
+
