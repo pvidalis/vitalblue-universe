@@ -53,7 +53,6 @@ vitalblue-universe/
 
 Compared with the earlier Vitalblue site, this modernization:
 
-- Moves from `index.php` (which contained no PHP application logic) to a static `index.html`.
 - Replaces jQuery-based interactions with vanilla JavaScript.
 - Removes unused legacy JavaScript and obsolete analytics/ad script loaders.
 - Retains the original orbital markup, CSS animation rules, and overall visual identity for compatibility.
